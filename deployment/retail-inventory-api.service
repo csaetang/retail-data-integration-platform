@@ -1,0 +1,13 @@
+[Unit]
+Description=Retail Inventory FastAPI Service
+After=network.target
+
+[Service]
+User=csaetang
+WorkingDirectory=/home/csaetang/retail-data-integration-platform
+ExecStart=/home/csaetang/retail-data-integration-platform/venv/bin/uvicorn api.inventory_api:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

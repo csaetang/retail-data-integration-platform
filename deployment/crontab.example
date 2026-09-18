@@ -1,0 +1,1 @@
+0 2 * * * /home/csaetang/retail-data-integration-platform/deployment/run_pipeline.sh >> /home/csaetang/retail-data-integration-platform/logs/pipeline.log 2>&1
